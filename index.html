@@ -47,5 +47,36 @@
     <input type="tel" id="phone" name="phone" pattern="^\d{10}$" placeholder="10-digit phone number" required autocomplete="tel"><br>
     </fieldset>
     </form>
+    <form action: "#" method="post">
+    <fieldset>
+      <legend>Credit Card Details</legend>
+      <label for="cardnumber">Card Number:</label><br>
+      <input type="text" id="cardnumber" name="cardnumber" maxlength="16" pattern="^\d{16}$" placeholder="16-digit card number" required><br>
+
+      <label for="expiry">Expiry Date (MM/YY):</label><br>
+      <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required><br>
+
+      <label for="cvv">CVV:</label><br>
+      <input type="password" id="cvv" name="cvv" maxlength="3" pattern="^\d{3}$" placeholder="Enter CVV" required><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Net Banking Details</legend>
+      <label for="bank">Select Bank:</label><br>
+      <select id="bank" name="bank">
+        <option value="">--Choose Bank--</option>
+        <option value="sbi">State Bank of India</option>
+        <option value="icici">ICICI Bank</option>
+        <option value="hdfc">HDFC Bank</option>
+        <option value="axis">Axis Bank</option>
+      </select><br>
+
+      <label for="userid">User ID:</label><br>
+      <input type="text" id="userid" name="userid"><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password"><br>
+    </fieldset>
+</form>
 </body>
 </html>
