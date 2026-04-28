@@ -1,0 +1,15 @@
+/* style.css */
+
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:Arial, sans-serif;
+}
+
+body{
+ background:linear-gradient(135deg,#1e3c72,#2a5298);
+ background: linear-gradient(-45deg,#1e3c72,#2a5298,#00c6ff,#4ca1af);
+background-size:400% 400%;
+animation:bgMove 8s infinite;
+}
