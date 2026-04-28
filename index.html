@@ -93,7 +93,8 @@
     </div>
   </div>
 </div>
-<form action="#" method="post">
+<div class="container">
+<form>
     <fieldset>
     <legend>Personal Details</legend>
     <label for="name">Full Name:</label><br>
@@ -120,40 +121,84 @@
     <input type="tel" id="phone" name="phone" pattern="^\d{10}$" placeholder="10-digit phone number" required autocomplete="tel"><br>
     </fieldset>
     </form>
-    <form action: "#" method="post">
-    <fieldset>
-      <legend>Credit Card Details</legend>
-      <label for="cardnumber">Card Number:</label><br>
-      <input type="text" id="cardnumber" name="cardnumber" maxlength="16" pattern="^\d{16}$" placeholder="16-digit card number" required><br>
+  <fieldset>
+      <legend>Payment Method</legend>
 
-      <label for="expiry">Expiry Date (MM/YY):</label><br>
-      <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required><br>
+<input type="radio" name="pay" id="credit" checked>
+<label for="credit">Credit Card</label>
 
-      <label for="cvv">CVV:</label><br>
-      <input type="password" id="cvv" name="cvv" maxlength="3" pattern="^\d{3}$" placeholder="Enter CVV" required><br>
-    </fieldset>
+<input type="radio" name="pay" id="net">
+<label for="net">Net Banking</label>
 
-    <fieldset>
-      <legend>Net Banking Details</legend>
-      <label for="bank">Select Bank:</label><br>
-      <select id="bank" name="bank">
-        <option value="">--Choose Bank--</option>
-        <option value="sbi">State Bank of India</option>
-        <option value="icici">ICICI Bank</option>
-        <option value="hdfc">HDFC Bank</option>
-        <option value="axis">Axis Bank</option>
-      </select><br>
+<input type="radio" name="pay" id="upi">
+<label for="upi">UPI</label>
 
-      <label for="userid">User ID:</label><br>
-      <input type="text" id="userid" name="userid"><br>
+<input type="radio" name="pay" id="wallet">
+<label for="wallet">Wallet</label>
 
-      <label for="password">Password:</label><br>
-      <input type="password" id="password" name="password"><br>
-    </fieldset>
+<!-- Credit Card Box -->
+<div class="box card-box">
+<h3>Credit Card Details</h3>
+
+<label>Card Number</label>
+<input type="text" maxlength="16" pattern="[0-9]{16}" placeholder="16 Digit Card Number">
+
+<label>Expiry Date</label>
+<input type="month">
+
+<label>CVV</label>
+<input type="password" maxlength="3" placeholder="CVV">
+
+</div>
+
+<!-- Net Banking -->
+<div class="box net-box">
+<h3>Net Banking</h3>
+
+<label>Select Bank</label>
+<select>
+<option>SBI</option>
+<option>HDFC</option>
+<option>ICICI</option>
+<option>AXIS</option>
+</select>
+
+<label>User ID</label>
+<input type="text">
+
+<label>Password</label>
+<input type="password">
+
+</div>
+
+<!-- UPI -->
+<div class="box upi-box">
+<h3>UPI Payment</h3>
+
+<label>UPI ID</label>
+<input type="text" placeholder="example@upi">
+
+</div>
+
+<!-- Wallet -->
+<div class="box wallet-box">
+<h3>Wallet</h3>
+
+<select>
+<option>Paytm</option>
+<option>PhonePe</option>
+<option>Google Pay</option>
+<option>Amazon Pay</option>
+</select>
+
+</div>
+
+</fieldset>
     <fieldset>
       <button type="submit">Submit</button>
     <button type="reset">Reset</button>
     </fieldset>
 </form>
+</div>
 </body>
 </html>
