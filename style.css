@@ -42,3 +42,25 @@ nav ul li a{
  text-decoration:none;
  transition:0.3s;
 }
+/* Header */
+header{
+ text-align:center;
+ padding:25px;
+}
+
+marquee{
+ color:yellow;
+ font-size:20px;
+ font-weight:bold;
+ margin-top:10px;
+}
+/* Container */
+.container{
+ width:60%;
+ margin:auto;
+ background:white;
+ padding:30px;
+ border-radius:15px;
+ box-shadow:0 0 20px rgba(0,0,0,0.5);
+ margin-bottom:40px;
+}
