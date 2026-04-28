@@ -153,3 +153,32 @@ button{
  font-size:16px;
  transition:0.4s;
 }
+/* Footer */
+footer{
+ background:#111;
+ color:white;
+ text-align:center;
+ padding:15px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.container{
+ width:90%;
+}
+
+nav{
+ flex-direction:column;
+}
+
+nav ul{
+ margin-top:10px;
+ flex-direction:column;
+ text-align:center;
+}
+
+nav ul li{
+ margin:8px 0;
+}
+}
