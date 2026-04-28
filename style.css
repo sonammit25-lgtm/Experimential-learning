@@ -13,3 +13,32 @@ body{
 background-size:400% 400%;
 animation:bgMove 8s infinite;
 }
+/* Navbar */
+nav{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ background:#111;
+ padding:15px 40px;
+}
+
+.logo{
+ color:white;
+ font-size:24px;
+ font-weight:bold;
+}
+
+nav ul{
+ list-style:none;
+ display:flex;
+}
+
+nav ul li{
+ margin-left:20px;
+}
+
+nav ul li a{
+ color:white;
+ text-decoration:none;
+ transition:0.3s;
+}
