@@ -64,3 +64,46 @@ marquee{
  box-shadow:0 0 20px rgba(0,0,0,0.5);
  margin-bottom:40px;
 }
+/* Form */
+fieldset{
+ border:2px solid #2a5298;
+ padding:20px;
+ margin-bottom:20px;
+ border-radius:10px;
+}
+
+legend{
+ padding:5px 10px;
+ color:#2a5298;
+ font-weight:bold;
+}
+
+label{
+ display:block;
+ margin-top:10px;
+ font-weight:bold;
+}
+
+input,select,textarea{
+ width:100%;
+ padding:10px;
+ margin-top:5px;
+ border-radius:8px;
+ border:1px solid gray;
+}
+
+input:focus,select:focus,textarea:focus{
+ border:2px solid #00c6ff;
+ outline:none;
+ box-shadow:0 0 8px #00c6ff;
+}
+input:focus{
+border:2px solid cyan;
+box-shadow:0 0 10px cyan;
+}
+/* Payment radio buttons */
+input[type="radio"]{
+ width:auto;
+ margin-right:5px;
+ margin-top:15px;
+}
