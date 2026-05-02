@@ -105,9 +105,69 @@
     </div>
   </div>
 </div>
-<div class="container">
-<form>
-    <fieldset>
+<div class="main-container">
+   <!-- Left Side -->
+<div class="side left">
+        <h2>Why Join Our Workshop?</h2>
+
+        <div class="item">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+                <h4>Learn from Experts</h4>
+                <p>Gain knowledge from professionals</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <i class="fas fa-rocket"></i>
+            <div>
+                <h4>Hands-on Experience</h4>
+                <p>Work on real-world projects</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <i class="fas fa-users"></i>
+            <div>
+                <h4>Networking</h4>
+                <p>Connect with developers and mentors.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <i class="fas fa-certificate"></i>
+            <div>
+                <h4>Certificate</h4>
+                <p>Boost your career</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <i class="fas fa-chart-line"></i>
+            <div>
+                <h4>Career Growth</h4>
+                <p>Open new opportunities</p>
+            </div>
+        </div>
+        <div class="item">
+        <i class="fas fa-laptop-code"></i>
+        <div>
+            <h4>Live Projects</h4>
+            <p>Work on AI, ML and Web projects.</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <i class="fas fa-briefcase"></i>
+        <div>
+            <h4>Career Support</h4>
+            <p>Resume building & interview guidance.</p>
+        </div>
+    </div>
+    </div>
+    <!-- Center Form -->
+     <div class="form-box">
+  <form onsubmit="saveData(event)">
     <legend>Personal Details</legend>
     <label for="name">Full Name:</label><br>
     <input type="text" id="name" name="name" placeholder="Enter your full name" size = "120" required autocomplete="name"><br>
@@ -131,8 +191,18 @@
     
     <label for="phone">Phone Number:</label><br>
     <input type="tel" id="phone" name="phone" pattern="^\d{10}$" placeholder="10-digit phone number" required autocomplete="tel"><br>
-    </fieldset>
-    </form>
+    <label>Courses</label>
+<select required>
+<option>Select Course</option>
+<option>AI</option>
+<option>Frontend Development</option>
+<option>Machine Learning</option>
+<option>Backend Development</option>
+<option>Full Stack Development</option>
+<option>Data Science</option>
+</select>
+
+<!-- Payment Method -->
   <fieldset>
       <legend>Payment Method</legend>
 
@@ -212,6 +282,7 @@
     </div>
 </form>
 </div>
+
 <footer>
 © 2026 AI Workshop Registration
 </footer>
