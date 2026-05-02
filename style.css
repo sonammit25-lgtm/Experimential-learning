@@ -138,3 +138,60 @@ marquee{
 .form-box h2 {
     color: #007bff;
 }
+/* INPUTS */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* ROW INPUT */
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+/* RADIO */
+.radio {
+    margin: 10px 0;
+}
+
+/* Form */
+fieldset{
+ border:2px solid #2a5298;
+ padding:20px;
+ margin-bottom:20px;
+ border-radius:10px;
+}
+
+legend{
+ padding:5px 10px;
+ color:#2a5298;
+ font-weight:bold;
+}
+
+label{
+ display:block;
+ margin-top:10px;
+ font-weight:bold;
+}
+
+input,select,textarea{
+ width:100%;
+ padding:10px;
+ margin-top:5px;
+ border-radius:8px;
+ border:1px solid gray;
+}
+
+input:focus,select:focus,textarea:focus{
+ border:2px solid #00c6ff;
+ outline:none;
+ box-shadow:0 0 8px #00c6ff;
+}
+input:focus{
+border:2px solid cyan;
+box-shadow:0 0 10px cyan;
+}
