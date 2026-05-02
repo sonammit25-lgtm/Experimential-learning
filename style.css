@@ -71,6 +71,45 @@ marquee{
     padding: 40px;
     gap: 20px;
 }
+/* SIDE PANELS */
+.side {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    color: black;
+    backdrop-filter: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.form-box {
+    flex: 2;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.side .card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.2);
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.side .card:hover {
+    transform: scale(1.05);
+    background: rgba(255,255,255,0.35);
+}
+
+.side .card i {
+    background: white;
+    color: #007bff;
+    padding: 10px;
+    border-radius: 50%;
+}
 
 /* Form */
 fieldset{
