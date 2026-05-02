@@ -21,6 +21,15 @@ nav{
  background:#111;
  padding:15px 40px;
 }
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
 
 .logo{
  color:white;
@@ -55,15 +64,14 @@ marquee{
  margin-top:10px;
 }
 /* Container */
-.container{
- width:60%;
- margin:auto;
- background:white;
- padding:30px;
- border-radius:15px;
- box-shadow:0 0 20px rgba(0,0,0,0.5);
- margin-bottom:40px;
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 40px;
+    gap: 20px;
 }
+
 /* Form */
 fieldset{
  border:2px solid #2a5298;
