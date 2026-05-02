@@ -338,8 +338,41 @@ function saveData(event) {
     event.target.reset();
 }
 </script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Geolocation API -->
+    <script>
+function loadMap(lat, lon) {
+    var map = L.map('map').setView([lat, lon], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    L.marker([lat, lon]).addTo(map)
+        .bindPopup("You are here")
+        .openPopup();
+}
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+            function(position) {
+                loadMap(position.coords.latitude, position.coords.longitude);
+            },
+            function() {
+                // Default India location (Nagpur)
+                loadMap(21.1458, 79.0882);
+            }
+        );
+    } else {
+        loadMap(21.1458, 79.0882);
+    }
+}
+
+window.onload = getLocation;
+</script>
+</body>
 <footer>
 © 2026 AI Workshop Registration
 </footer>
-</body>
 </html>
