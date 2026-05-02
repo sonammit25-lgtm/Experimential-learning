@@ -318,6 +318,26 @@
 </div>
     </div>
     </div>
+    <script>
+      //Web Storage API - localStorage
+function saveData(event) {
+    event.preventDefault();
+
+    let name = document.querySelector("input[type='text']").value;
+    let email = document.querySelector("input[type='email']").value;
+    let phone = document.querySelector("input[type='tel']").value;
+
+    // Store in localStorage
+    localStorage.setItem("name", name);
+    localStorage.setItem("email", email);
+    localStorage.setItem("phone", phone);
+
+    alert("Data Saved Successfully!");
+
+    // Optional: reset form
+    event.target.reset();
+}
+</script>
 <footer>
 © 2026 AI Workshop Registration
 </footer>
