@@ -110,122 +110,31 @@ marquee{
     padding: 10px;
     border-radius: 50%;
 }
-
-/* Form */
-fieldset{
- border:2px solid #2a5298;
- padding:20px;
- margin-bottom:20px;
- border-radius:10px;
+/* LEFT ITEMS */
+.item {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    align-items: center;
+}
+.item i,
+.side .card i {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
 }
 
-legend{
- padding:5px 10px;
- color:#2a5298;
- font-weight:bold;
+
+/* CENTER FORM */
+.form-box {
+    width: 50%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
-label{
- display:block;
- margin-top:10px;
- font-weight:bold;
-}
-
-input,select,textarea{
- width:100%;
- padding:10px;
- margin-top:5px;
- border-radius:8px;
- border:1px solid gray;
-}
-
-input:focus,select:focus,textarea:focus{
- border:2px solid #00c6ff;
- outline:none;
- box-shadow:0 0 8px #00c6ff;
-}
-input:focus{
-border:2px solid cyan;
-box-shadow:0 0 10px cyan;
-}
-/* Payment radio buttons */
-input[type="radio"]{
- width:auto;
- margin-right:5px;
- margin-top:15px;
-}
-/* Boxes Hidden by Default */
-.box{
- display:none;
- background:#f3f8ff;
- padding:15px;
- margin-top:15px;
- border-radius:10px;
- border:1px solid #ccc;
-}
-.container:hover{
-transform:translateY(-5px);
-transition:0.4s;
-}
-/* Show boxes using CSS only */
-#credit:checked ~ .card-box{
- display:block;
-}
-
-#net:checked ~ .net-box{
- display:block;
-}
-
-#upi:checked ~ .upi-box{
- display:block;
-}
-
-#wallet:checked ~ .wallet-box{
- display:block;
-}
-
-/* Buttons */
-.buttons{
- text-align:center;
-}
-
-button{
- padding:12px 25px;
- margin:10px;
- border:none;
- border-radius:8px;
- background:#2a5298;
- color:white;
- cursor:pointer;
- font-size:16px;
- transition:0.4s;
-}
-/* Footer */
-footer{
- background:#111;
- color:white;
- text-align:center;
- padding:15px;
-}
-
-/* Responsive */
-@media(max-width:768px){
-
-.container{
- width:90%;
-}
-
-nav{
- flex-direction:column;
-}
-
-nav ul{
- margin-top:10px;
- flex-direction:column;
- text-align:center;
-}
-
-nav ul li{
- margin:8px 0;
-}
+.form-box h2 {
+    color: #007bff;
 }
