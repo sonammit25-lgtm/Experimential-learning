@@ -195,3 +195,39 @@ input:focus{
 border:2px solid cyan;
 box-shadow:0 0 10px cyan;
 }
+/* Payment radio buttons */
+input[type="radio"]{
+ width:auto;
+ margin-right:5px;
+ margin-top:15px;
+}
+
+/* Boxes Hidden by Default */
+.box{
+ display:none;
+ background:#f3f8ff;
+ padding:15px;
+ margin-top:15px;
+ border-radius:10px;
+ border:1px solid #ccc;
+}
+.container:hover{
+transform:translateY(-5px);
+transition:0.4s;
+}
+/* Show boxes using CSS only */
+#credit:checked ~ .card-box{
+ display:block;
+}
+
+#net:checked ~ .net-box{
+ display:block;
+}
+
+#upi:checked ~ .upi-box{
+ display:block;
+}
+
+#wallet:checked ~ .wallet-box{
+ display:block;
+}
