@@ -231,3 +231,27 @@ transition:0.4s;
 #wallet:checked ~ .wallet-box{
  display:block;
 }
+/* Buttons */
+.buttons{
+display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    width: 48%;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
